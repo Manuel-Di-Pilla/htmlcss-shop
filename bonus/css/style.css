@@ -5,39 +5,41 @@
 }
 
 .container{
-  text-align: center;
   padding: 10px;
 }
-
 .row{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
-
-.box{
+.ul-img{
+  list-style: none;
+  text-align: center;
+}
+li{
   display: inline-block;
   position: relative;
+  height: 20%;
+  width: 20%;
+  margin-left: 10px;
 }
-
 .discount{
-  background: green;
   position: absolute;
   top: 0;
   right: 0;
+  background: green;
 }
-
-.box:nth-child(even) .discount{
+li:nth-child(even) .discount{
   background: red;
 }
-.hearts{
+.heart{
   position: absolute;
-  font-size: 30px;
   bottom: 5px;
   color: red;
-  width: 300px;
+  width: 100%;
   text-align: center;
+  font-size: 40px;
   display: none;
 }
-.box:hover .hearts{
+li:hover .heart{
   display: block;
   cursor: pointer;
 }
